@@ -14,7 +14,7 @@ namespace SDM_Compulsory_Assignment
         {
             using (StreamReader r =
                 new StreamReader(
-                    "C:/Users/Nijas Hansen/source/repos/SDM_Compulsory_Assignment1/SDM Compulsory Assignment/RESOURCES/SmallRating.json")
+                    "RESOURCES/SmallRating.json")
             )
             {
                 string json = r.ReadToEnd();
