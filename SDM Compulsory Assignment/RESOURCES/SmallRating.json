@@ -1,0 +1,554 @@
+[
+  {
+    "Reviewer": 1,
+    "Movie": 1488844,
+    "Grade": 3,
+    "Date": "2005-09-06"
+  },
+  {
+    "Reviewer": 1,
+    "Movie": 822109,
+    "Grade": 5,
+    "Date": "2005-05-13"
+  },
+  {
+    "Reviewer": 1,
+    "Movie": 123456,
+    "Grade": 4,
+    "Date": "2005-10-19"
+  },
+  {
+    "Reviewer": 3,
+    "Movie": 123456,
+    "Grade": 3,
+    "Date": "2004-06-07"
+  },
+  {
+    "Reviewer": 3,
+    "Movie": 2000928,
+    "Grade": 4,
+    "Date": "2004-09-21"
+  },
+  {
+    "Reviewer": 3,
+    "Movie": 2242356,
+    "Grade": 5,
+    "Date": "2004-10-21"
+  },
+  {
+    "Reviewer": 3,
+    "Movie": 539743,
+    "Grade": 2,
+    "Date": "2005-07-13"
+  },
+  {
+    "Reviewer": 3,
+    "Movie": 867624,
+    "Grade": 4,
+    "Date": "2003-11-08"
+  },
+  {
+    "Reviewer": 3,
+    "Movie": 220024,
+    "Grade": 5,
+    "Date": "2004-03-22"
+  },
+  {
+    "Reviewer": 3,
+    "Movie": 1418638,
+    "Grade": 4,
+    "Date": "2004-06-24"
+  },
+  {
+    "Reviewer": 3,
+    "Movie": 1067151,
+    "Grade": 2,
+    "Date": "2003-05-30"
+  },
+  {
+    "Reviewer": 3,
+    "Movie": 704856,
+    "Grade": 4,
+    "Date": "2003-08-22"
+  },
+  {
+    "Reviewer": 3,
+    "Movie": 1114063,
+    "Grade": 4,
+    "Date": "2003-11-14"
+  },
+  {
+    "Reviewer": 3,
+    "Movie": 312506,
+    "Grade": 3,
+    "Date": "2004-03-24"
+  },
+  {
+    "Reviewer": 3,
+    "Movie": 542027,
+    "Grade": 4,
+    "Date": "2004-08-03"
+  },
+  {
+    "Reviewer": 3,
+    "Movie": 773532,
+    "Grade": 5,
+    "Date": "2004-09-17"
+  },
+  {
+    "Reviewer": 3,
+    "Movie": 1686810,
+    "Grade": 4,
+    "Date": "2004-12-31"
+  },
+  {
+    "Reviewer": 334,
+    "Movie": 921795,
+    "Grade": 2,
+    "Date": "2005-11-09"
+  },
+  {
+    "Reviewer": 334,
+    "Movie": 860197,
+    "Grade": 3,
+    "Date": "2005-11-10"
+  },
+  {
+    "Reviewer": 334,
+    "Movie": 118552,
+    "Grade": 3,
+    "Date": "2005-11-13"
+  },
+  {
+    "Reviewer": 334,
+    "Movie": 787977,
+    "Grade": 4,
+    "Date": "2005-11-14"
+  },
+  {
+    "Reviewer": 334,
+    "Movie": 1418181,
+    "Grade": 4,
+    "Date": "2005-11-14"
+  },
+  {
+    "Reviewer": 334,
+    "Movie": 275642,
+    "Grade": 4,
+    "Date": "2005-11-17"
+  },
+  {
+    "Reviewer": 334,
+    "Movie": 2402896,
+    "Grade": 2,
+    "Date": "2005-11-18"
+  },
+  {
+    "Reviewer": 334,
+    "Movie": 123456,
+    "Grade": 3,
+    "Date": "2005-11-21"
+  },
+  {
+    "Reviewer": 571,
+    "Movie": 1688953,
+    "Grade": 1,
+    "Date": "2004-11-09"
+  },
+  {
+    "Reviewer": 571,
+    "Movie": 1924718,
+    "Grade": 2,
+    "Date": "2004-11-12"
+  },
+  {
+    "Reviewer": 571,
+    "Movie": 311286,
+    "Grade": 4,
+    "Date": "2004-11-13"
+  },
+  {
+    "Reviewer": 571,
+    "Movie": 1692450,
+    "Grade": 5,
+    "Date": "2004-11-13"
+  },
+  {
+    "Reviewer": 571,
+    "Movie": 1111814,
+    "Grade": 4,
+    "Date": "2005-05-14"
+  },
+  {
+    "Reviewer": 571,
+    "Movie": 2066795,
+    "Grade": 5,
+    "Date": "2004-11-17"
+  },
+  {
+    "Reviewer": 571,
+    "Movie": 1489436,
+    "Grade": 5,
+    "Date": "2004-11-17"
+  },
+  {
+    "Reviewer": 571,
+    "Movie": 1395053,
+    "Grade": 5,
+    "Date": "2004-11-18"
+  },
+  {
+    "Reviewer": 571,
+    "Movie": 630732,
+    "Grade": 2,
+    "Date": "2004-11-19"
+  },
+  {
+    "Reviewer": 686,
+    "Movie": 1370816,
+    "Grade": 2,
+    "Date": "2002-07-15"
+  },
+  {
+    "Reviewer": 686,
+    "Movie": 909432,
+    "Grade": 1,
+    "Date": "2002-03-06"
+  },
+  {
+    "Reviewer": 686,
+    "Movie": 2170295,
+    "Grade": 2,
+    "Date": "2002-04-11"
+  },
+  {
+    "Reviewer": 686,
+    "Movie": 1709295,
+    "Grade": 2,
+    "Date": "2002-05-18"
+  },
+  {
+    "Reviewer": 686,
+    "Movie": 705714,
+    "Grade": 4,
+    "Date": "2002-01-09"
+  },
+  {
+    "Reviewer": 686,
+    "Movie": 2288896,
+    "Grade": 2,
+    "Date": "2003-10-16"
+  },
+  {
+    "Reviewer": 686,
+    "Movie": 308631,
+    "Grade": 3,
+    "Date": "2005-07-27"
+  },
+  {
+    "Reviewer": 686,
+    "Movie": 658466,
+    "Grade": 4,
+    "Date": "2002-03-17"
+  },
+  {
+    "Reviewer": 686,
+    "Movie": 309645,
+    "Grade": 3,
+    "Date": "2003-05-01"
+  },
+  {
+    "Reviewer": 686,
+    "Movie": 973453,
+    "Grade": 1,
+    "Date": "2002-05-20"
+  },
+  {
+    "Reviewer": 686,
+    "Movie": 123456,
+    "Grade": 4,
+    "Date": "2002-07-15"
+  },
+  {
+    "Reviewer": 686,
+    "Movie": 581952,
+    "Grade": 4,
+    "Date": "2005-07-31"
+  },
+  {
+    "Reviewer": 686,
+    "Movie": 285765,
+    "Grade": 3,
+    "Date": "2002-06-22"
+  },
+  {
+    "Reviewer": 686,
+    "Movie": 1886026,
+    "Grade": 3,
+    "Date": "2005-02-20"
+  },
+  {
+    "Reviewer": 746,
+    "Movie": 495271,
+    "Grade": 3,
+    "Date": "2004-06-14"
+  },
+  {
+    "Reviewer": 746,
+    "Movie": 2229996,
+    "Grade": 2,
+    "Date": "2002-10-10"
+  },
+  {
+    "Reviewer": 746,
+    "Movie": 455380,
+    "Grade": 4,
+    "Date": "2004-07-09"
+  },
+  {
+    "Reviewer": 746,
+    "Movie": 1900424,
+    "Grade": 5,
+    "Date": "2003-06-25"
+  },
+  {
+    "Reviewer": 746,
+    "Movie": 2065684,
+    "Grade": 3,
+    "Date": "2004-08-02"
+  },
+  {
+    "Reviewer": 746,
+    "Movie": 1003845,
+    "Grade": 3,
+    "Date": "2003-03-26"
+  },
+  {
+    "Reviewer": 746,
+    "Movie": 796472,
+    "Grade": 3,
+    "Date": "2003-01-22"
+  },
+  {
+    "Reviewer": 746,
+    "Movie": 2080256,
+    "Grade": 5,
+    "Date": "2002-12-08"
+  },
+  {
+    "Reviewer": 746,
+    "Movie": 2120034,
+    "Grade": 5,
+    "Date": "2005-08-16"
+  },
+  {
+    "Reviewer": 746,
+    "Movie": 1770255,
+    "Grade": 4,
+    "Date": "2003-07-03"
+  },
+  {
+    "Reviewer": 862,
+    "Movie": 2200358,
+    "Grade": 3,
+    "Date": "2004-06-30"
+  },
+  {
+    "Reviewer": 862,
+    "Movie": 1675194,
+    "Grade": 5,
+    "Date": "2004-07-20"
+  },
+  {
+    "Reviewer": 862,
+    "Movie": 2144556,
+    "Grade": 4,
+    "Date": "2004-09-16"
+  },
+  {
+    "Reviewer": 862,
+    "Movie": 123456,
+    "Grade": 4,
+    "Date": "2004-09-11"
+  },
+  {
+    "Reviewer": 862,
+    "Movie": 2592247,
+    "Grade": 3,
+    "Date": "2004-09-17"
+  },
+  {
+    "Reviewer": 862,
+    "Movie": 1258036,
+    "Grade": 4,
+    "Date": "2004-09-17"
+  },
+  {
+    "Reviewer": 862,
+    "Movie": 271128,
+    "Grade": 4,
+    "Date": "2004-11-02"
+  },
+  {
+    "Reviewer": 862,
+    "Movie": 1685973,
+    "Grade": 3,
+    "Date": "2004-11-08"
+  },
+  {
+    "Reviewer": 862,
+    "Movie": 1180482,
+    "Grade": 3,
+    "Date": "2004-11-15"
+  },
+  {
+    "Reviewer": 862,
+    "Movie": 809955,
+    "Grade": 4,
+    "Date": "2004-11-19"
+  },
+  {
+    "Reviewer": 862,
+    "Movie": 498128,
+    "Grade": 3,
+    "Date": "2004-11-23"
+  },
+  {
+    "Reviewer": 862,
+    "Movie": 297991,
+    "Grade": 4,
+    "Date": "2004-11-25"
+  },
+  {
+    "Reviewer": 999,
+    "Movie": 186604,
+    "Grade": 1,
+    "Date": "2003-02-23"
+  },
+  {
+    "Reviewer": 999,
+    "Movie": 1746949,
+    "Grade": 3,
+    "Date": "2004-04-20"
+  },
+  {
+    "Reviewer": 999,
+    "Movie": 537600,
+    "Grade": 3,
+    "Date": "2004-11-28"
+  },
+  {
+    "Reviewer": 999,
+    "Movie": 440836,
+    "Grade": 2,
+    "Date": "2005-02-13"
+  },
+  {
+    "Reviewer": 999,
+    "Movie": 525354,
+    "Grade": 4,
+    "Date": "2005-04-04"
+  },
+  {
+    "Reviewer": 999,
+    "Movie": 464774,
+    "Grade": 3,
+    "Date": "2005-10-31"
+  },
+  {
+    "Reviewer": 999,
+    "Movie": 1032648,
+    "Grade": 4,
+    "Date": "2004-07-06"
+  },
+  {
+    "Reviewer": 999,
+    "Movie": 2524438,
+    "Grade": 3,
+    "Date": "2002-04-30"
+  },
+  {
+    "Reviewer": 999,
+    "Movie": 1321135,
+    "Grade": 2,
+    "Date": "2004-05-26"
+  },
+  {
+    "Reviewer": 999,
+    "Movie": 1555081,
+    "Grade": 3,
+    "Date": "2004-05-23"
+  },
+  {
+    "Reviewer": 999,
+    "Movie": 809468,
+    "Grade": 5,
+    "Date": "2002-07-19"
+  },
+  {
+    "Reviewer": 999,
+    "Movie": 917160,
+    "Grade": 2,
+    "Date": "2005-08-26"
+  },
+  {
+    "Reviewer": 999,
+    "Movie": 72262,
+    "Grade": 4,
+    "Date": "2004-08-05"
+  },
+  {
+    "Reviewer": 999,
+    "Movie": 1310542,
+    "Grade": 3,
+    "Date": "2004-05-24"
+  },
+  {
+    "Reviewer": 999,
+    "Movie": 1300759,
+    "Grade": 3,
+    "Date": "2004-09-27"
+  },
+  {
+    "Reviewer": 999,
+    "Movie": 740272,
+    "Grade": 1,
+    "Date": "2004-11-16"
+  },
+  {
+    "Reviewer": 999,
+    "Movie": 1230410,
+    "Grade": 1,
+    "Date": "2005-03-24"
+  },
+  {
+    "Reviewer": 999,
+    "Movie": 1100542,
+    "Grade": 2,
+    "Date": "2005-07-07"
+  },
+  {
+    "Reviewer": 999,
+    "Movie": 1033266,
+    "Grade": 3,
+    "Date": "2005-07-20"
+  },
+  {
+    "Reviewer": 999,
+    "Movie": 2205373,
+    "Grade": 1,
+    "Date": "2002-12-27"
+  },
+  {
+    "Reviewer": 999,
+    "Movie": 234275,
+    "Grade": 3,
+    "Date": "2004-12-06"
+  },
+  {
+    "Reviewer": 999,
+    "Movie": 1559566,
+    "Grade": 2,
+    "Date": "2005-09-26"
+  }
+]
