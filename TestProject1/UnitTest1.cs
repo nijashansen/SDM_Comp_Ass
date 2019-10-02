@@ -60,7 +60,7 @@ namespace TestProject1
         [TestMethod]
         public void TestRatingsOnMovieTrue()
         {
-            Assert.IsTrue(Logic.getHowManyRatingsOnMovie(123456) == 3);
+            Assert.IsTrue(Logic.getHowManyRatingsOnMovie(123456) == 5);
         }
         
         [TestMethod]
