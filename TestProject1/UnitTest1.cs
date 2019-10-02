@@ -108,5 +108,17 @@ namespace TestProject1
         {
             Assert.IsFalse(Logic.getNumberOfGradeOnMovie(123456, 4) == 2);
         }
+  
+        [TestMethod]
+        public void testTopMovie()
+        {
+            Assert.AreEqual(Logic.getMosTopRatedMovie(), 822109);
+        }
+
+        [TestMethod]
+        public void testTopReviwer()
+        {
+            Assert.AreEqual(Logic.Topreviewer(), 999);
+        }
     }
 }

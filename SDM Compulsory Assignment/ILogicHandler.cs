@@ -15,5 +15,9 @@ namespace SDM_Compulsory_Assignment
         double getAvgRatinOnMovie(int movieId);
 
         int getNumberOfGradeOnMovie(int MovieId, int Grade);
+        
+        int getMosTopRatedMovie();
+
+        int Topreviewer();
     }
 }
