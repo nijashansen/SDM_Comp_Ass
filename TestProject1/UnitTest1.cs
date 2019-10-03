@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SDM_Compulsory_Assignment;
 
@@ -24,37 +26,37 @@ namespace TestProject1
         [TestMethod]
         public void TestAvgTru()
         {
-            Assert.IsTrue(Logic.getAverigeRevive(1) == 4.0);
+            Assert.IsTrue(Logic.getAverageReview(1) == 4.0);
         }
         
         [TestMethod]
         public void TestAvgFalsHig()
         {
-            Assert.IsFalse(Logic.getAverigeRevive(1) == 5.1);
+            Assert.IsFalse(Logic.getAverageReview(1) == 5.1);
         }
         
         [TestMethod]
         public void TestAvgFalsLow()
         {
-            Assert.IsFalse(Logic.getAverigeRevive(1) == 3.8);
+            Assert.IsFalse(Logic.getAverageReview(1) == 3.8);
         }
 
         [TestMethod]
         public void TestGetGradeXTru()
         {
-            Assert.IsTrue(Logic.GetCommenGrade(3, 4)== 7);
+            Assert.IsTrue(Logic.GetCommonGrade(3, 4)== 7);
         }
         
         [TestMethod]
         public void TestGetGradeXFalsLow()
         {
-            Assert.IsFalse(Logic.GetCommenGrade(3, 4)== 4);
+            Assert.IsFalse(Logic.GetCommonGrade(3, 4)== 4);
         }
         
         [TestMethod]
         public void TestGetGradeXFalsHige()
         {
-            Assert.IsFalse(Logic.GetCommenGrade(3, 4)== 200);
+            Assert.IsFalse(Logic.GetCommonGrade(3, 4)== 200);
         }
 
         [TestMethod]
@@ -77,48 +79,60 @@ namespace TestProject1
         [TestMethod]
         public void TestAvgMovieGradeTrue()
         {
-            Assert.IsTrue(Logic.getAvgRatinOnMovie(123456)== 3.6);
+            Assert.IsTrue(Logic.getAvgRatingOnMovie(123456)== 3.6);
         }
         
         [TestMethod]
         public void TestAvgMovieGradeFalsLow()
         {
-            Assert.IsFalse(Logic.getAvgRatinOnMovie(123456)== 2.6);
+            Assert.IsFalse(Logic.getAvgRatingOnMovie(123456)== 2.6);
         }
         
         [TestMethod]
         public void TestAvgMovieGradeFalsHige()
         {
-            Assert.IsFalse(Logic.getAvgRatinOnMovie(123456)== 5.6);
+            Assert.IsFalse(Logic.getAvgRatingOnMovie(123456)== 5.6);
         }
 
         [TestMethod]
         public void TestGradeNumberOfRatingsOnMovie()
         {
-            Assert.IsTrue(Logic.getNumberOfGradeOnMovie(123456, 4) == 3);
+            Assert.IsTrue(Logic.getNumberOfGradesOnMovie(123456, 4) == 3);
         }
         
         [TestMethod]
         public void TestGradeNumberOfRatingsOnMovieFalsHige()
         {
-            Assert.IsFalse(Logic.getNumberOfGradeOnMovie(123456, 4) == 16);
+            Assert.IsFalse(Logic.getNumberOfGradesOnMovie(123456, 4) == 16);
         }
         [TestMethod]
         public void TestGradeNumberOfRatingsOnMovieFalsLow()
         {
-            Assert.IsFalse(Logic.getNumberOfGradeOnMovie(123456, 4) == 2);
+            Assert.IsFalse(Logic.getNumberOfGradesOnMovie(123456, 4) == 2);
         }
   
         [TestMethod]
         public void testTopMovie()
         {
-            Assert.AreEqual(Logic.getMosTopRatedMovie(), 822109);
+            Assert.AreEqual(Logic.getMostTopRatedMovie(), 822109);
         }
 
         [TestMethod]
         public void testTopReviwer()
         {
-            Assert.AreEqual(Logic.Topreviewer(), 999);
+            Assert.AreEqual(Logic.TopReviewer(), 999);
+        }
+
+        [TestMethod]
+        public void testGetReviwedMoviesByReviewer()
+        {
+            
+        }
+        
+        [TestMethod]
+        public void testGetReviewersByMovieId()
+        {
+            
         }
     }
 }
