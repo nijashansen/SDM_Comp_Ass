@@ -65,10 +65,10 @@ namespace SDM_Compulsory_Assignment
          */
         public int getMostTopRatedMovie()
         {
-            IEnumerable<Review> TopMovies = Reviews.Where(g => g.Grade == 5);
-            TopMovies.GroupBy(mo => mo.Movie)
+            IEnumerable<Review> topMovies = Reviews.Where(g => g.Grade == 5);
+            topMovies.GroupBy(mo => mo.Movie)
                 .OrderByDescending(gru => gru.Count());
-            var max = TopMovies.First().Movie;
+            var max = topMovies.First().Movie;
             return max;
         }
         /*opgave 8
@@ -95,7 +95,7 @@ namespace SDM_Compulsory_Assignment
         {
             var revs = Reviews.Where(mo => mo.Reviewer == reviewerId)
                 .OrderByDescending(g => g.Grade)
-                .OrderBy(d => d.Date).ToList();
+                .ThenBy(d => d.Date).ToArray();
             
             List<int> movies = new List<int>();
             foreach (var movie in revs)

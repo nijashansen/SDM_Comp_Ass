@@ -1,6 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SDM_Compulsory_Assignment;
 
@@ -121,18 +118,6 @@ namespace TestProject1
         public void testTopReviwer()
         {
             Assert.AreEqual(Logic.TopReviewer(), 999);
-        }
-
-        [TestMethod]
-        public void testGetReviwedMoviesByReviewer()
-        {
-            
-        }
-        
-        [TestMethod]
-        public void testGetReviewersByMovieId()
-        {
-            
         }
     }
 }
