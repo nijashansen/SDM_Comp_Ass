@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\Nijas Hansen\.nuget\packages\microsoft.net.test.sdk\16.0.1\build\netcoreapp1.0" t="Include">
@@ -35,6 +35,7 @@
           </e>
         </e>
         <e p="RESOURCES" t="Include">
+          <e p="ratings.json" t="Include" />
           <e p="SmallRating.json" t="Include" />
         </e>
         <e p="SDM Compulsory Assignment.csproj" t="IncludeRecursive" />
