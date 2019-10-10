@@ -6,7 +6,7 @@ namespace TestProject1
     [TestClass]
     public class UnitTest1
     {
-        ILogicHandler Logic = new LogicHandler();
+        ILogicHandler Logic = new LogicHandler("RESOURCES/ratings.json");
         
         [TestMethod]
         public void TestGetReviewsForTrue()

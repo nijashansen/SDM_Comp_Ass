@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using Newtonsoft.Json;
@@ -9,16 +10,29 @@ namespace SDM_Compulsory_Assignment
     public class LogicHandler : ILogicHandler
     {
         public IEnumerable<Review> Reviews;
-
-        public LogicHandler()
+        
+        public LogicHandler(string fileName)
         {
-            using (StreamReader r =
-                new StreamReader(
-                    "RESOURCES/SmallRating.json")
-            )
+            LoadData(fileName);
+        }
+
+        public void  LoadData(string fileName)
+        {
+            using (StreamReader r = new StreamReader(fileName))
             {
                 string json = r.ReadToEnd();
                 Reviews = JsonConvert.DeserializeObject<IEnumerable<Review>>(json);
+            }
+        }
+
+        public void PrintTimeInSeconds(Action ac, int repeats)
+        {
+            for (int i = 0; i < repeats; i++)
+            {
+                Stopwatch sw = Stopwatch.StartNew();
+                ac.Invoke();
+                sw.Stop();
+                Console.WriteLine("        Time = {0:f5}", sw.ElapsedMilliseconds / 1000.0);
             }
         }
 
