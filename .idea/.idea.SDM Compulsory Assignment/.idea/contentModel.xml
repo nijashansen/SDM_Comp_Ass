@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Nijas Hansen\.nuget\packages\microsoft.net.test.sdk\16.0.1\build\netcoreapp1.0" t="Include">
+    <e p="C:\Users\onech\.nuget\packages\microsoft.net.test.sdk\16.0.1\build\netcoreapp1.0" t="Include">
       <e p="Microsoft.NET.Test.Sdk.Program.cs" t="Include" />
     </e>
-    <e p="C:\Users\Nijas Hansen\.nuget\packages\mstest.testadapter\1.4.0\build\_common\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll" t="Include" />
-    <e p="C:\Users\Nijas Hansen\.nuget\packages\mstest.testadapter\1.4.0\build\_common\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll" t="Include" />
-    <e p="C:\Users\Nijas Hansen\.nuget\packages\mstest.testadapter\1.4.0\build\netcoreapp1.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll" t="Include" />
-    <e p="C:\Users\Nijas Hansen\.Rider2019.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Nijas Hansen\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_SDM Compulsory Assignment.1719130251.00" t="ExcludeRecursive" />
-    <e p="C:\Users\Nijas Hansen\source\repos\SDM_Comp_Ass" t="IncludeFlat">
+    <e p="C:\Users\onech\.nuget\packages\mstest.testadapter\1.4.0\build\_common\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll" t="Include" />
+    <e p="C:\Users\onech\.nuget\packages\mstest.testadapter\1.4.0\build\_common\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll" t="Include" />
+    <e p="C:\Users\onech\.nuget\packages\mstest.testadapter\1.4.0\build\netcoreapp1.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll" t="Include" />
+    <e p="C:\Users\onech\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\onech\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_SDM Compulsory Assignment.-890191106.00" t="ExcludeRecursive" />
+    <e p="C:\Users\onech\RiderProjects\SDM_Comp_Ass" t="IncludeFlat">
       <e p="packages" t="ExcludeRecursive" />
       <e p="PerformanceTestProject2" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
@@ -46,8 +46,9 @@
             </e>
           </e>
         </e>
+        <e p="repo.cs" t="Include" />
         <e p="RESOURCES" t="Include">
-          <e p="ratings.json" t="Include" />
+          <e p="gg.json" t="Include" />
           <e p="SmallRating.json" t="Include" />
         </e>
         <e p="SDM Compulsory Assignment.csproj" t="IncludeRecursive" />

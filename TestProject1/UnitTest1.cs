@@ -6,8 +6,9 @@ namespace TestProject1
     [TestClass]
     public class UnitTest1
     {
-        ILogicHandler Logic = new LogicHandler("RESOURCES/ratings.json");
-        
+        ILogicHandler Logic = new LogicHandler(new repo("RESOURCES/SmallRating.json"));
+        ILogicHandler logicForMoreComplex = new LogicHandler(new repo("RESOURCES/gg.json"));
+
         [TestMethod]
         public void TestGetReviewsForTrue()
         {
@@ -107,17 +108,25 @@ namespace TestProject1
         {
             Assert.IsFalse(Logic.getNumberOfGradesOnMovie(123456, 4) == 2);
         }
-  
+
+
+        [DataRow(1, new int[] { 9, 6, 7, 8, 10, 4, 2, 3, 5, 1 })]
+        [DataRow(2, new int[] { 2, 3, 1 })]
         [TestMethod]
-        public void testTopMovie()
+        public void TestGetReviewsSorted(int ReviewerID, int[] expected)
         {
-            Assert.AreEqual(Logic.getMostTopRatedMovie(), 822109);
+           
+            int[] result = logicForMoreComplex.GetReviwedMoviesByReviewer(ReviewerID);
+            for (int i = 0; i < result.Length; i++)
+            {
+                Assert.AreEqual(expected[i], result[i]);
+            }
         }
 
-        [TestMethod]
-        public void testTopReviwer()
-        {
-            Assert.AreEqual(Logic.TopReviewer(), 999);
-        }
+        //[TestMethod]
+        //public void testTopReviwer()
+        //{
+        //    Assert.AreEqual(Logic.TopReviewer(), 999);
+        //}
     }
 }

@@ -15,12 +15,12 @@ namespace SDM_Compulsory_Assignment
         double getAvgRatingOnMovie(int movieId);
 
         int getNumberOfGradesOnMovie(int MovieId, int Grade);
-        
-        int getMostTopRatedMovie();
 
-        int TopReviewer();
+        int[] GetTopRatedMovie();
 
-        List<int> GetReviwedMoviesByReviewer(int reviewerId);
+        int[] TopReviewer();
+
+        int[] GetReviwedMoviesByReviewer(int reviewerId);
 
         List<int> GetReviewersByMovieId(int movieId);
     }

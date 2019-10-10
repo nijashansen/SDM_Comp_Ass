@@ -7,7 +7,7 @@ namespace PerformanceTestProject2
     [TestClass]
     public class UnitTest1
     {
-        ILogicHandler Logic = new LogicHandler("RESOURCES/ratings.json");
+        private LogicHandler Logic = new LogicHandler(new repo("RESOURCES/SmallRating.json"));
 
         private double MAXTIME = 4;
         
@@ -15,7 +15,8 @@ namespace PerformanceTestProject2
         public void TestMethod1()
         {
             Stopwatch sw = Stopwatch.StartNew();
-            Logic.TopReviewer();
+           
+
             sw.Stop();
 
             var seconds = sw.ElapsedMilliseconds / 1000.0;
@@ -27,6 +28,7 @@ namespace PerformanceTestProject2
         public void TestMethod2()
         {
             Stopwatch sw = Stopwatch.StartNew();
+           
             Logic.getReviews(23);
             sw.Stop();
 
@@ -63,7 +65,7 @@ namespace PerformanceTestProject2
         public void TestMethod5()
         {
             Stopwatch sw = Stopwatch.StartNew();
-            Logic.getMostTopRatedMovie();
+            Logic.GetTopRatedMovie();
             sw.Stop();
 
             var seconds = sw.ElapsedMilliseconds / 1000.0;

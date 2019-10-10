@@ -9,21 +9,14 @@ namespace SDM_Compulsory_Assignment
 {
     public class LogicHandler : ILogicHandler
     {
-        public IEnumerable<Review> Reviews;
-        
-        public LogicHandler(string fileName)
+        private repo _repo;
+
+        public LogicHandler(repo repo)
         {
-            LoadData(fileName);
+            _repo = repo;
         }
 
-        public void  LoadData(string fileName)
-        {
-            using (StreamReader r = new StreamReader(fileName))
-            {
-                string json = r.ReadToEnd();
-                Reviews = JsonConvert.DeserializeObject<IEnumerable<Review>>(json);
-            }
-        }
+       
 
         public void PrintTimeInSeconds(Action ac, int repeats)
         {
@@ -39,62 +32,89 @@ namespace SDM_Compulsory_Assignment
         //opgave 1
         public int getReviews(int reviewId)
         {
-            List<Review> reviews = Reviews.Where(re => re.Reviewer == reviewId).ToList();
-            return reviews.Count;
+            return _repo.GetMovieReviews().Where(r => r.Reviewer == reviewId).Count();
         }
+
         //opgave 2
         public double getAverageReview(int reviewId)
         {
-            IEnumerable<Review> per = Reviews.Where(re => re.Reviewer == reviewId);
-            var avg = per.Average(re => re.Grade);
-            return avg;
+            List<Review> list = _repo.GetMovieReviews().Where(r => r.Reviewer == reviewId).ToList();
+            double Sum = 0;
+            foreach (var item in list)
+            {
+                Sum += item.Grade;
+            }
+            return Sum / list.Count();
         }
         //opgave 3
         public int GetCommonGrade(int reviwerId, int Grade)
         {
-            int per = Reviews.Count(re => re.Reviewer == reviwerId && re.Grade == Grade);
-            return per;
+            return _repo.GetMovieReviews().Where(r => r.Reviewer == reviwerId).Where(r => r.Grade == Grade).Count();
         }
         //opgave 4
         public int getHowManyRatingsOnMovie(int movieId)
         {
-            return Reviews.Count(m => m.Movie == movieId);
+            return _repo.GetMovieReviews().Count(m => m.Movie == movieId);
         }
         //opgave 5
         public double getAvgRatingOnMovie(int movieId)
         {
-            IEnumerable<Review> per = Reviews.Where(mo => mo.Movie == movieId);
-            var avg = per.Average(mo => mo.Grade);
-            return avg;
+            List<Review> list = _repo.GetMovieReviews().Where(mr => mr.Movie == movieId).ToList();
+            double gradeSum = 0;
+            foreach (var item in list)
+            {
+                gradeSum += item.Grade;
+            }
+            return gradeSum / list.Count();
         }
         //opgave 6
         public int getNumberOfGradesOnMovie(int MovieId, int Grade)
         {
-            return Reviews.Count(g => g.Movie == MovieId && g.Grade == Grade);
+            return _repo.GetMovieReviews().Count(g => g.Movie == MovieId && g.Grade == Grade);
         }
         
         /*opgave 7
          shut return a list of movies if the is more then one movie whit same number of 5 ratings.
          is still to be implemented
          */
-        public int getMostTopRatedMovie()
+        public int[] GetTopRatedMovie()
         {
-            IEnumerable<Review> topMovies = Reviews.Where(g => g.Grade == 5);
-            topMovies.GroupBy(mo => mo.Movie)
-                .OrderByDescending(gru => gru.Count());
-            var max = topMovies.First().Movie;
-            return max;
+            var list = _repo.GetMovieReviews().Where(m => m.Grade == 5).GroupBy(m => m.Movie).OrderByDescending(g => g.Count()).AsEnumerable();
+            var count = list.First().Count();
+
+            var temp = list.Where(g => g.Count() == count).ToList();
+
+            int[] arr = new int[temp.Count()];
+            int i = 0;
+            foreach (var item in temp)
+            {
+                arr[i] = item.First().Movie;
+               i++;
+            }
+
+            return arr;
+
         }
+
         /*opgave 8
         shut return a list of reviewers if the is more then one reviewer whit same number of reviews.
         is still to be implemented
         */
-        public int TopReviewer()
+        public int[] TopReviewer()
         {
-           var topReviwer = Reviews.GroupBy(rw => rw.Reviewer)
-               .OrderByDescending(gb => gb.Count()).Select(gb => gb.Key)
-               .First();
-           return topReviwer;
+            var list = _repo.GetMovieReviews().GroupBy(m => m.Reviewer).OrderByDescending(g => g.Count()).AsEnumerable();
+            int count = list.First().Count();
+
+            var temp = list.Where(g => g.Count() == count).ToList();
+
+            int[] result = new int[temp.Count()];
+            int i = 0;
+            foreach (var item in temp)
+            {
+                result[i] = item.First().Reviewer;
+                i++;
+            }
+            return result;
         }
         
         /**
@@ -105,19 +125,10 @@ namespace SDM_Compulsory_Assignment
          * opgave 10
          * har ikke kunne teste, men den skulle virke :P 
          */
-        public List<int> GetReviwedMoviesByReviewer(int reviewerId)
+        public int[] GetReviwedMoviesByReviewer(int reviewerId)
         {
-            var revs = Reviews.Where(mo => mo.Reviewer == reviewerId)
-                .OrderByDescending(g => g.Grade)
-                .ThenBy(d => d.Date).ToArray();
-            
-            List<int> movies = new List<int>();
-            foreach (var movie in revs)
-            {
-                movies.Add(movie.Movie);
-            }
-
-            return movies;
+           int[] byReviewer = _repo.GetMovieReviews().Where(m => m.Reviewer == reviewerId).OrderByDescending(m => m.Grade).ThenByDescending(mr => mr.Date).Select(mr => mr.Movie).ToArray();
+           return byReviewer;
         }
         
         /**
@@ -126,7 +137,7 @@ namespace SDM_Compulsory_Assignment
          */
         public List<int> GetReviewersByMovieId(int movieId)
         {
-            var revs = Reviews.Where(mo => mo.Movie == movieId)
+            var revs = _repo.GetMovieReviews().Where(mo => mo.Movie == movieId)
                 .OrderByDescending(g => g.Grade)
                 .OrderBy(d => d.Date).ToList();
 
