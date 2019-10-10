@@ -6,18 +6,22 @@ namespace SDM_Compulsory_Assignment
     {
         int getReviews(int reviewId);
 
-        double getAverigeRevive(int reviewId);
+        double getAverageReview(int reviewId);
 
-        int GetCommenGrade(int reviwerId, int Grade);
+        int GetCommonGrade(int reviwerId, int Grade);
 
         int getHowManyRatingsOnMovie(int movieId);
 
-        double getAvgRatinOnMovie(int movieId);
+        double getAvgRatingOnMovie(int movieId);
 
-        int getNumberOfGradeOnMovie(int MovieId, int Grade);
+        int getNumberOfGradesOnMovie(int MovieId, int Grade);
         
-        int getMosTopRatedMovie();
+        int getMostTopRatedMovie();
 
-        int Topreviewer();
+        int TopReviewer();
+
+        List<int> GetReviwedMoviesByReviewer(int reviewerId);
+
+        List<int> GetReviewersByMovieId(int movieId);
     }
 }

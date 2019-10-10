@@ -151,7 +151,7 @@ UpgradeLog*.htm
 
 # Temp files when opening LibreOffice on ubuntu
 .~lock.*
- 
+
 # svn
 .svn
 
@@ -228,3 +228,5 @@ project.lock.json
 *.xml
 .idea/.idea.SDM Compulsory Assignment/.idea/contentModel.xml
 .idea/.idea.SDM Compulsory Assignment/.idea/workspace.xml
+.idea/.idea.SDM Compulsory Assignment/.idea/workspace.xml
+SDM Compulsory Assignment/RESOURCES/ratings.json
