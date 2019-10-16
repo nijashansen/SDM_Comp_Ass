@@ -23,8 +23,8 @@
       <list>
         <option value="$PROJECT_DIR$/SDM Compulsory Assignment/ILogicHandler.cs" />
         <option value="$PROJECT_DIR$/SDM Compulsory Assignment/LogicHandler.cs" />
-        <option value="$PROJECT_DIR$/TestProject1/UnitTest1.cs" />
         <option value="$PROJECT_DIR$/PerformanceTestProject2/UnitTest1.cs" />
+        <option value="$PROJECT_DIR$/TestProject1/UnitTest1.cs" />
       </list>
     </option>
   </component>
@@ -82,6 +82,7 @@
       <workItem from="1570727670234" duration="154000" />
       <workItem from="1570727843108" duration="14000" />
       <workItem from="1570735832320" duration="29000" />
+      <workItem from="1571234208040" duration="795000" />
     </task>
     <servers />
   </component>

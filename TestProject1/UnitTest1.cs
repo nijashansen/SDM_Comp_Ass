@@ -7,7 +7,7 @@ namespace TestProject1
     public class UnitTest1
     {
         ILogicHandler Logic = new LogicHandler(new repo("RESOURCES/SmallRating.json"));
-        ILogicHandler logicForMoreComplex = new LogicHandler(new repo("RESOURCES/gg.json"));
+        ILogicHandler logicForMoreComplex = new LogicHandler(new repo("RESOURCES/gg.Json"));
 
         [TestMethod]
         public void TestGetReviewsForTrue()
@@ -109,7 +109,7 @@ namespace TestProject1
             Assert.IsFalse(Logic.getNumberOfGradesOnMovie(123456, 4) == 2);
         }
 
-
+        /*
         [DataRow(1, new int[] { 9, 6, 7, 8, 10, 4, 2, 3, 5, 1 })]
         [DataRow(2, new int[] { 2, 3, 1 })]
         [TestMethod]
@@ -122,6 +122,7 @@ namespace TestProject1
                 Assert.AreEqual(expected[i], result[i]);
             }
         }
+        */
 
         //[TestMethod]
         //public void testTopReviwer()

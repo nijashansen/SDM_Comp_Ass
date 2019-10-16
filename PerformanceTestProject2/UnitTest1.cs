@@ -1,3 +1,4 @@
+using System;
 using System.Diagnostics;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SDM_Compulsory_Assignment;
@@ -7,70 +8,96 @@ namespace PerformanceTestProject2
     [TestClass]
     public class UnitTest1
     {
-        private LogicHandler Logic = new LogicHandler(new repo("RESOURCES/SmallRating.json"));
 
-        private double MAXTIME = 4;
+        private LogicHandler _service;
+        public UnitTest1()
+        {
+            _service = new LogicHandler(new repo("RESOURCES/ratings.json"));
+        }
+
+        private double getAvgTime(Action ac, int times)
+        {
+            double sum = 0.0;
+            for (int i = 0; i < times; i++)
+            {
+                Stopwatch sw = new Stopwatch();
+                sw.Start();
+                ac.Invoke();
+                sw.Stop();
+                sum += sw.ElapsedMilliseconds;
+            }
+            return (sum / (double)times) / 1000.0;
+
+        }
+
+
+
         
+        
+
         [TestMethod]
         public void TestMethod1()
         {
-            Stopwatch sw = Stopwatch.StartNew();
-           
-
-            sw.Stop();
-
-            var seconds = sw.ElapsedMilliseconds / 1000.0;
-
-            Assert.IsTrue(seconds <= MAXTIME);
+            double avgTime = getAvgTime(() => _service.getAverageReview(5), 5);
+            Assert.IsTrue(avgTime < 4.0);
         }
         
         [TestMethod]
         public void TestMethod2()
         {
-            Stopwatch sw = Stopwatch.StartNew();
-           
-            Logic.getReviews(23);
-            sw.Stop();
-
-            var seconds = sw.ElapsedMilliseconds / 1000.0;
-
-            Assert.IsTrue(seconds <= MAXTIME);
+            double avgTime = getAvgTime(() => _service.GetCommonGrade(5, 5),5);
+            Assert.IsTrue(avgTime < 4.0);
         }
         
         [TestMethod]
         public void TestMethod3()
         {
-            Stopwatch sw = Stopwatch.StartNew();
-            Logic.GetCommonGrade(123, 5);
-            sw.Stop();
-
-            var seconds = sw.ElapsedMilliseconds / 1000.0;
-
-            Assert.IsTrue(seconds <= MAXTIME);
+            double avgTime = getAvgTime(() => _service.getHowManyRatingsOnMovie(5), 5);
+            Assert.IsTrue(avgTime < 4.0);
         }
         
         [TestMethod]
         public void TestMethod4()
         {
-            Stopwatch sw = Stopwatch.StartNew();
-            Logic.getNumberOfGradesOnMovie(52, 2);
-            sw.Stop();
-
-            var seconds = sw.ElapsedMilliseconds / 1000.0;
-
-            Assert.IsTrue(seconds <= MAXTIME);
+            double avgTime = getAvgTime(() => _service.getAvgRatingOnMovie(5), 5);
+            Assert.IsTrue(avgTime < 4.0);
         }
         
         [TestMethod]
         public void TestMethod5()
         {
-            Stopwatch sw = Stopwatch.StartNew();
-            Logic.GetTopRatedMovie();
-            sw.Stop();
-
-            var seconds = sw.ElapsedMilliseconds / 1000.0;
-
-            Assert.IsTrue(seconds <= MAXTIME);
+            double avgTime = getAvgTime(() => _service.getNumberOfGradesOnMovie(5,5), 5);
+            Assert.IsTrue(avgTime < 4.0);
         }
+
+        [TestMethod]
+        public void TestMethod6()
+        {
+            double avgTime = getAvgTime(() => _service.GetTopRatedMovie(), 5);
+            Assert.IsTrue(avgTime < 4.0);
+        }
+
+        [TestMethod]
+        public void TestMethod7()
+        {
+            double avgTime = getAvgTime(() => _service.TopReviewer(), 5);
+            Assert.IsTrue(avgTime < 4.0);
+        }
+
+        [TestMethod]
+        public void TestMethod8()
+        {
+            double avgTime = getAvgTime(() => _service.GetReviwedMoviesByReviewer(5), 5);
+            Assert.IsTrue(avgTime < 4.0);
+        }
+
+        [TestMethod]
+        public void TestMethod9()
+        {
+            double avgTime = getAvgTime(() => _service.GetReviewersByMovieId(5), 5);
+            Assert.IsTrue(avgTime < 4.0);
+        }
+
+
     }
 }
