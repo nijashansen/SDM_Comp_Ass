@@ -6,7 +6,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\SDM Compulsory Assignment\SDM Compulsory Assignment.csproj" />
+      <ProjectReference Include="..\SDM Compulsory Assignment\SDMCompulsoryAssignment.csproj" />
     </ItemGroup>
 
 </Project>

@@ -80,7 +80,7 @@ namespace SDM_Compulsory_Assignment
             foreach (var item in temp)
             {
                 arr[i] = item.First().Movie;
-               i++;
+                i++;
             }
 
             return arr;
@@ -118,8 +118,8 @@ namespace SDM_Compulsory_Assignment
          */
         public int[] GetReviwedMoviesByReviewer(int reviewerId)
         {
-           int[] byReviewer = _repo.GetMovieReviews().Where(m => m.Reviewer == reviewerId).OrderByDescending(m => m.Grade).ThenByDescending(mr => mr.Date).Select(mr => mr.Movie).ToArray();
-           return byReviewer;
+            int[] byReviewer = _repo.GetMovieReviews().Where(m => m.Reviewer == reviewerId).OrderByDescending(m => m.Grade).ThenByDescending(mr => mr.Date).Select(mr => mr.Movie).ToArray();
+            return byReviewer;
         }
         
         /**
@@ -143,14 +143,14 @@ namespace SDM_Compulsory_Assignment
         }
 
     }
-}
 
 
-public class Review
-{
-    public int Reviewer { get; set; }
-    public int Movie { get; set; }
-    public int Grade { get; set; }
+    public class Review
+    {
+        public int Reviewer { get; set; }
+        public int Movie { get; set; }
+        public int Grade { get; set; }
     
-    public DateTime Date { get; set; }
+        public DateTime Date { get; set; }
+    }
 }
