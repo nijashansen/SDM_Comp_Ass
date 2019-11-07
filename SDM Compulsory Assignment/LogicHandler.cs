@@ -46,6 +46,7 @@ namespace SDM_Compulsory_Assignment
         public int getHowManyRatingsOnMovie(int movieId)
         {
             return _repo.GetMovieReviews().Count(m => m.Movie == movieId);
+            movieId == 000000;     
         }
         //opgave 5
         public double getAvgRatingOnMovie(int movieId)
