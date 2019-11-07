@@ -24,7 +24,7 @@ namespace TestProject1
         [TestMethod]
         public void TestAvgTru()
         {
-            Assert.IsTrue(Logic.getAverageReview(1) == 4.0kjwrngiowngo);
+            Assert.IsTrue(Logic.getAverageReview(1) == 4.0);
         }
         
         [TestMethod]
