@@ -1,4 +1,9 @@
-language ruby
-rvm
- - 2.2
- - jruby
+language: csharp
+mono: none
+dotnet: 2.2
+solution: SDMCompulsoryAssignment.sln
+
+script:
+ - dotnet restore
+ - dotnet build
+ - dotnet test TestProject1/TestProject1.csproj
