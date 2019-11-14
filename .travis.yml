@@ -6,4 +6,3 @@ solution: SDMCompulsoryAssignment.sln
 script:
  - dotnet restore
  - dotnet build
- - dotnet test TestProject1/TestProject1.csproj
