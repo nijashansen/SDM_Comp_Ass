@@ -1,8 +1,8 @@
 language: csharp
-mono: latest
+mono: none
 dotnet: 2.2
 solution: SDMCompulsoryAssignment.sln
-
 script:
  - dotnet restore
  - dotnet build
+ 
